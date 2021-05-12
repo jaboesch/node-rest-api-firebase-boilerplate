@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "rest-api-boilerplate"
+    "default": "rest-api-boilerplate-dev",
+    "production": "rest-api-boilerplate",
+    "staging": "rest-api-boilerplate-dev"
   }
 }

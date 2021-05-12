@@ -1,0 +1,12 @@
+steps:
+- name: 'gcr.io/rest-api-boilerplate/firebase'
+  args: [ 'use', 'rest-api-boilerplate']
+
+
+- name: 'gcr.io/cloud-builders/npm'
+  dir: 'functions'
+  args: ['install']
+
+
+- name: 'gcr.io/rest-api-boilerplate/firebase'
+  args: [ 'deploy', '--only', 'functions']
