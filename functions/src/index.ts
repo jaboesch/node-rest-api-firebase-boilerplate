@@ -12,5 +12,5 @@ export const helloWorld = functions.https.onCall(async (data, context) => {
   // });
   const text = data.text;
   const writeResult = await admin.firestore().collection('debug').add({message: text});
-  return {result: `Message with ID: ${writeResult.id} added.`};
+  return {result: `Message with ID: ${writeResult.id} added. iter0`};
 });

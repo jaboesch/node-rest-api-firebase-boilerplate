@@ -67,3 +67,4 @@ node_modules/
 
 # extra ignore files
 .DS_Store
+.firebase/
