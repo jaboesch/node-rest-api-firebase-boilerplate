@@ -11,6 +11,6 @@ export const helloWorld = functions.https.onCall(async (data, context) => {
   //   response.json({result: `Message with ID: ${writeResult.id} added.`});
   // });
   const text = data.text;
-  const writeResult = await admin.firestore().collection('debug').add({message: text, iter: 0, date: new Date()});
-  return {result: `Message with ID: ${writeResult.id} added. iter-1`};
+  const writeResult = await admin.firestore().collection('debug').add({message: text, iter: 2, date: new Date()});
+  return {result: `Message with ID: ${writeResult.id} added. iter-2`};
 });
