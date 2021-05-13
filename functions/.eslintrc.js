@@ -19,7 +19,7 @@ module.exports = {
   ],
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
-    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/no-empty-function": "warn",
     "@typescript-eslint/no-empty-interface": "warn",
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-namespace": "error",
@@ -31,7 +31,7 @@ module.exports = {
     "constructor-super": "error",
     eqeqeq: ["warn", "always"],
     "import/no-deprecated": "warn",
-    "import/no-extraneous-dependencies": "error",
+    "import/no-extraneous-dependencies": "warn",
     "import/no-unassigned-import": "warn",
     "no-cond-assign": "error",
     "no-duplicate-case": "error",
